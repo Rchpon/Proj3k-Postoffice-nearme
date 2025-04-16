@@ -14,5 +14,9 @@ bit 00000000
 bitt 00000000
 bittt 00000000
 testtt 00000000
+<<<<<<< HEAD
 >>>>>>> 45c4a11cf996807ea2fd6b12998880e2dab78464
 hee 12345612
+=======
+kao asdasdasdasd
+>>>>>>> 12d6d409a370290a7474533a9bdeab1f97fc0b8e

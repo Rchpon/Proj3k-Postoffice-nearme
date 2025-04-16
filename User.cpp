@@ -1,5 +1,6 @@
 #include "User.h"
 #include "Sender.h" 
+#include "DeliveryStaff.h"
 #include "Utils.h"  // Include Utils.h for clearScreen
 #include <iostream>
 #include <limits>
@@ -33,7 +34,27 @@ void User::LoginSystem() {
         cout << "\033[1;32m===================================================" << endl;
         cout << "Login successful!" << endl;
         cout << "===================================================\033[0m" << endl;
-        sender_menu(username);  
+        
+        int c;
+        while (c!=3)
+        {
+        c=sender_or_Deli();
+        clearScreen();
+        if(c==1){
+        sender_menu(username);
+        
+        }
+        if(c==2){
+        Deli_menu(username); 
+
+
+
+        }
+        if(c==3){
+            break;
+        }
+        else break;
+    }
     } else {
         clearScreen();  // Clear screen on failure
         cout << "\033[1;31m===================================================" << endl;
