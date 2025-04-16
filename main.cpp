@@ -5,9 +5,9 @@
 
 #include "User.h"
 #include "Menu.h"
+#include "Utils.h"  // Include the new header
 
 using namespace std;
-
 
 int main(){
 User user;
